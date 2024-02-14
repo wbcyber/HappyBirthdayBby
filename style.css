@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: hsl(340, 82%, 52%);
+    display: inline-block;
+  }
+  #newText{
+    color: rgb(111, 173, 211);
+  }
+  h2{
+    color: rgb(111, 173, 211);
+  }
+ 
+  .heart {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    animation: heartbeat 1s infinite alternate;
+  }
+  #first{
+    width: 35px;
+    height: 35px;
+  }
+  
+  .heart::before,
+  .heart::after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background-color: #e91e63;
+    border-radius: 25px 25px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  
+
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Flower animation */
+  .flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    animation: falling 5s linear infinite;
+  }
+  
+  @keyframes falling {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  footer {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+  }
