@@ -1,4 +1,4 @@
-const texts = ['HOBBY', 'SWEET', 'IMA MMI', 'IFUNAYA MMI']; // Define an array of texts to cycle through
+const texts = ['HOBBY', 'SWEETIM','OBIM','NKEM','GLOSSY ANGEL','IMA MMI','']; // Define an array of texts to cycle through
 
 const changeText = (index) => {
     setTimeout(() => {
